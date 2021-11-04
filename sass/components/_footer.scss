@@ -1,0 +1,115 @@
+.footer{
+    background: $gray;
+    color: $black;
+
+    &__wrapper{
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: $contentpadding;
+        padding-bottom: $contentpadding;
+    }
+
+    &__section-heading{
+        margin: 0px;
+        font-size: 1.2em;
+    }
+
+    &__section{
+        padding: $contentpadding;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item{
+        padding-top: $contentpadding;
+        font-family: 'Lato', sans-serif;
+    }
+    &__link:hover{
+        color: $primary-hover;
+    }
+    &__item span{
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+    }
+    
+    &__item-wrap{
+        display: flex;
+    }
+    &__social-icon{
+        margin-right: $contentpadding;
+        margin-top: $contentpadding;
+    }
+    &__input{
+        padding: 8px;
+        max-width: 300px;
+        margin-right: 8px;
+        margin-top: $contentpadding;
+    }
+
+    &__button{
+        color: $primary;
+        max-width: 60px;
+        margin-top: $contentpadding /2;
+    }
+    &__button:hover{
+        color: $primary-hover;
+    }
+ 
+    &__bottom-text{
+        margin-left: auto;
+        margin-right: auto;
+        color: $white;
+        background-color: $primary;
+        text-align: center;
+        padding: $contentpadding /2;
+        font-family: 'Lato', sans-serif;
+
+    }
+    &__link{
+        color: black;
+    }
+    &__bulletpoint{
+        background-color: $primary;
+        width: 4px;
+        margin-right: 8px;
+    }
+    &__heading-wrap{
+        display: flex;
+    }
+    &__list-social{
+        display: flex;
+    }
+
+    &__social-icons{
+        color: $black;
+        margin-right: 20px;
+        font-size: 1.1em;
+    }
+}
+
+
+@media screen and (min-width: 520px){
+    .footer{
+        &__wrapper{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__section{
+            width: 50%;
+        }  
+  
+    }
+    
+}
+
+@media screen and (min-width: 900px){
+    .footer{
+        &__section{
+            width: 25%;
+        }
+        
+    }
+}
+
+

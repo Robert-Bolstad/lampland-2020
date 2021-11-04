@@ -1,0 +1,32 @@
+.usp {
+  color: $white;
+  background-color: $primary;
+  &__list {
+    display: flex;
+    overflow-x: auto;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    padding: $contentpadding;
+    align-items: center;
+    font-size: 0.75em;
+  }
+  &__item h4 {
+    margin: 0px;
+    display: block;
+    white-space: nowrap;
+  }
+  &__text {
+    margin-left: 10px;
+  }
+  &__check-icon {
+    font-size: 2em;
+    margin-right: 8px;
+    color: $secondary-lite;
+  }
+}

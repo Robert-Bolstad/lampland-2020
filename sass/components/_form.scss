@@ -1,0 +1,150 @@
+.form{
+    padding: $contentpadding;
+    padding-top: 0px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__heading{
+       text-align: center;
+       margin-top: 50px;
+       margin-bottom: 50px;
+    }
+    &__submit{
+        background-color: $primary;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border: 0.8px;
+        cursor: pointer;
+        border: 3px solid $primary;
+    }
+
+    &__input{
+        width: 100%;
+        height: 35px;
+        border: 1px solid black;
+        padding-left: 10px;
+        background-color: #E2E2E2;
+    }
+    
+    &__input:focus{
+        outline: none;
+    } 
+
+    &__input-wrapper{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 35px;
+        margin-bottom: $contentpadding;
+        border: 0.8px;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    }
+
+    &__select{
+        width: 100%;
+        height: 35px;
+        border: 1px solid black;
+        padding-left: 10px;
+        background-color: #E2E2E2;
+    }
+    
+    
+    &__field{
+        padding-bottom: 20px;
+    }
+    
+    &__field input{
+        width: 100%;
+        padding: 10px;
+    }
+
+    &__textarea{
+        width: 100%;
+        height: 200px;
+        resize: none;
+        background-color: #E2E2E2;
+        border: 1px solid black;
+    }
+
+    &__img-display{
+        width: 100%;
+        height: 300px;
+        background-color: $gray;
+        background-image: url("../../img/image-photography.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__img{
+        height: 0px;
+    }
+
+    &__img-url{
+        width: 100%;
+        padding: $contentpadding / 2;
+    }
+
+    &__url-wrapper{
+        font-family: 'Lato', sans-serif;
+        padding: 10px;
+        border: 0.8px;
+        background-color: $gray;
+        display: inline-block;
+        margin-top: $contentpadding;
+        margin-bottom: $contentpadding;
+        padding: $contentpadding;
+        width: 100%;
+    }
+
+    &__featured{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: $contentpadding;
+        background-color: $gray;
+        padding: $contentpadding;
+        border: 1px solid $black;
+    }
+
+    &__checkbox-btn{
+        padding: 4px;
+        cursor: pointer;
+        border: 2px solid $black;
+        border-radius: 5px;
+        background-color: $white;
+    }
+
+    &__checkbox-btn:focus{
+        outline-color: $primary;
+    }
+
+    &__checkbox-icon{
+        color: $white;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .form__img-display{
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .form{
+        display: flex;
+        padding: 0px;
+        
+        &__row{
+            width: 50%;
+            padding: $contentpadding;
+
+        }
+        &__img-display{
+            height: 370px;
+        }
+    }
+
+  }

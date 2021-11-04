@@ -1,0 +1,38 @@
+
+
+.heading-homepage{
+    text-align: center;
+    padding: $contentpadding;
+    margin: 0px;
+    margin-top: $contentpadding * 2;
+    margin-bottom: $contentpadding;
+    justify-content: baseline;
+}
+
+.view-all-products-wrapper{
+    padding: $contentpadding;
+}
+
+.view-all-products{
+    background-color: $primary;
+    text-align: center;
+    padding: $contentpadding;
+    display: block;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 700px){
+    .view-all-products-wrapper{
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+}
+
+.hompage-banner{
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+}

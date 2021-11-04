@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/logo.svg" type="image/svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1503a53b9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Products</title>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <nav class="nav"></nav>
+      </header>
+
+      <main class="main-products">
+        <div class="filter-wrapper">
+          <div class="productpage-wrapper">
+            <h1>Products</h1>
+            <button class="filter__search-icon">
+              <i class="fas fa-search fa-2x"></i>
+            </button>
+          </div>
+          <div class="filter">
+            <input
+              class="filter__input"
+              placeholder="Search product"
+              type="text"
+            />
+          </div>
+        </div>
+
+        <button class="filter-icon-btn">
+          <i class="fas filter-icon fa-filter"></i>Filter
+        </button>
+        <div class="filter-wrapper-two">
+          <div class="filter-wrapper-inner">
+            <div class="checkbox-wrapper">
+              <input
+                type="checkbox"
+                name="ceilingLamps"
+                class="checkbox-filter"
+                id="checkbox-ceiling-lamp"
+                hidden
+              />
+              <button class="filter-checkbox-btn" type="button">
+                <i class="filter-checkbox-icon fas fa-check"></i>
+              </button>
+              <span class="checkbox-wrapper__item-name">Ceiling lamps</span>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input
+                type="checkbox"
+                name="wallLamps"
+                class="checkbox-filter"
+                id="checkbox-wall-lamp"
+                hidden
+              />
+              <button class="filter-checkbox-btn" type="button">
+                <i class="filter-checkbox-icon fas fa-check"></i>
+              </button>
+              <span class="checkbox-wrapper__item-name">Wall lamps</span>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input
+                type="checkbox"
+                name="tableLamps"
+                class="checkbox-filter"
+                id="checkbox-table-lamp"
+                hidden
+              />
+              <button class="filter-checkbox-btn" type="button">
+                <i class="filter-checkbox-icon fas fa-check"></i>
+              </button>
+              <span class="checkbox-wrapper__item-name">Table lamps</span>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input
+                type="checkbox"
+                name="floorLamps"
+                class="checkbox-filter"
+                id="checkbox-floor-lamp"
+                hidden
+              />
+              <button class="filter-checkbox-btn" type="button">
+                <i class="filter-checkbox-icon fas fa-check"></i>
+              </button>
+              <span class="checkbox-wrapper__item-name">Floor lamps</span>
+            </div>
+
+            <div class="price-filter">
+              <input
+                class="price-filter__input"
+                type="search"
+                pattern="[0-9]"
+                id="price-filter"
+                placeholder="Filter price"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="loader">
+            <div class="loader__spin"></div>
+            <p class="loader__text">Loading products... Please wait</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__nav footer__section">
+          <div class="footer__heading-wrap">
+            <div class="footer__bulletpoint"></div>
+            <h3 class="footer__section-heading">Navigation</h3>
+          </div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="index.html">Home</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="products.html">Products</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="cart.html">Cart</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact footer__section">
+          <div class="footer__heading-wrap">
+            <div class="footer__bulletpoint"></div>
+            <h3 class="footer__section-heading">Contact Info</h3>
+          </div>
+          <ul class="footer__list">
+            <li class="footer__item"><span>Phone: </span>00 00 00 00</li>
+            <li class="footer__item"><span>Email: </span>lampland@email.com</li>
+            <li class="footer__item">
+              <span>Adress: </span>lampland 88, 5068 Bergen
+            </li>
+          </ul>
+        </div>
+        <div class="footer__socialmedia footer__section">
+          <div class="footer__heading-wrap">
+            <div class="footer__bulletpoint"></div>
+            <h3 class="footer__section-heading">Follow us</h3>
+          </div>
+          <div>
+            <ul class="footer__list-social">
+              <li class="footer__item">
+                <a class="footer__social-icons" href="https://facebook.com"
+                  ><i class="fab fa-facebook-f fa-lg"></i
+                ></a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__social-icons" href="https://instagram.com"
+                  ><i class="fab fa-instagram fa-lg"></i
+                ></a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__social-icons" href="https://twitter.com"
+                  ><i class="fab fa-twitter fa-lg"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__newsletter footer__section">
+          <div class="footer__heading-wrap">
+            <div class="footer__bulletpoint"></div>
+            <h3 class="footer__section-heading">Get our newsletter</h3>
+          </div>
+          <input
+            class="footer__input"
+            type="text"
+            placeholder="Enter your email"
+          />
+          <button class="footer__button">Sign up</button>
+        </div>
+      </div>
+      <div class="footer__bottom-text">©2020 Lampeland.com</div>
+    </footer>
+    <script src="./js/products.js" type="module"></script>
+  </body>
+</html>

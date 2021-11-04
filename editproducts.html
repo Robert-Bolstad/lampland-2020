@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/logo.svg" type="image/svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1503a53b9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Edit Product</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <header>
+        <nav class="nav"></nav>
+      </header>
+      <main>
+        <h1 class="form__heading">Edit Product</h1>
+
+        <form class="form" data-id="">
+          <div class="form__img-upload form__row">
+            <div class="message-container"></div>
+            <img
+              class="form__img"
+              src="/img/image-photography.svg"
+              alt="product image"
+            />
+            <div class="form__img-display"></div>
+            <div class="form__url-wrapper">
+              <label class="form__label-url" for="img-url"
+                >Enter image URL</label
+              >
+              <input class="form__img-url" id="img-url" type="url" />
+            </div>
+          </div>
+          <div class="form__product-details form__row">
+            <label for="title">Product Title</label>
+            <div class="form__field">
+              <input class="form__input" id="title" />
+            </div>
+
+            <label for="price">Product Price</label>
+            <div class="form__field">
+              <input class="form__input" id="price" />
+            </div>
+
+            <label for="category">Product Category</label>
+            <div class="form__field">
+              <select
+                class="form__select"
+                name="category"
+                id="category"
+                value=""
+              >
+                <option value="ceilingLamps">Ceiling lamp</option>
+                <option value="wallLamps">Wall lamp</option>
+                <option value="tableLamps">Table lamp</option>
+                <option value="floorLamps">Floor lamp</option>
+              </select>
+            </div>
+
+            <label for="description">Product Description</label>
+            <div class="form__field">
+              <textarea class="form__textarea" id="description"></textarea>
+            </div>
+            <div class="form__featured">
+              <p>Featured Product</p>
+              <button class="form__checkbox-btn" type="button">
+                <i class="form__checkbox-icon fas fa-check fa-lg"></i>
+              </button>
+              <input class="form__checkbox" type="checkbox" hidden />
+            </div>
+
+            <button class="form__submit" type="submit">Update Values</button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__nav footer__section">
+          <div class="footer__heading-wrap">
+            <div class="footer__bulletpoint"></div>
+            <h3 class="footer__section-heading">Navigation</h3>
+          </div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="index.html">Home</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="products.html">Products</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="cart.html">Cart</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact footer__section">
+          <div class="footer__heading-wrap">
+            <div class="footer__bulletpoint"></div>
+            <h3 class="footer__section-heading">Contact Info</h3>
+          </div>
+          <ul class="footer__list">
+            <li class="footer__item"><span>Phone: </span>00 00 00 00</li>
+            <li class="footer__item"><span>Email: </span>lampland@email.com</li>
+            <li class="footer__item">
+              <span>Adress: </span>lampland 88, 5068 Bergen
+            </li>
+          </ul>
+        </div>
+        <div class="footer__socialmedia footer__section">
+          <div class="footer__heading-wrap">
+            <div class="footer__bulletpoint"></div>
+            <h3 class="footer__section-heading">Follow us</h3>
+          </div>
+          <div>
+            <ul class="footer__list-social">
+              <li class="footer__item">
+                <a class="footer__social-icons" href="https://facebook.com"
+                  ><i class="fab fa-facebook-f fa-lg"></i
+                ></a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__social-icons" href="https://instagram.com"
+                  ><i class="fab fa-instagram fa-lg"></i
+                ></a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__social-icons" href="https://twitter.com"
+                  ><i class="fab fa-twitter fa-lg"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__newsletter footer__section">
+          <div class="footer__heading-wrap">
+            <div class="footer__bulletpoint"></div>
+            <h3 class="footer__section-heading">Get our newsletter</h3>
+          </div>
+          <input
+            class="footer__input"
+            type="text"
+            placeholder="Enter your email"
+          />
+          <button class="footer__button">Sign up</button>
+        </div>
+      </div>
+      <div class="footer__bottom-text">©2020 Lampeland.com</div>
+    </footer>
+    <script type="module" src="./js/editProducts.js"></script>
+  </body>
+</html>

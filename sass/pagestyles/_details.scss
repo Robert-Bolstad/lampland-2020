@@ -1,0 +1,138 @@
+.details-page{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    &__img{
+        height: 300px;
+        width: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $gray;
+    }
+    &__info{
+        padding: $contentpadding;
+    }
+    &__title-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: $contentpadding;
+    }
+    &__title{
+        margin: 0px;
+        color: $primary;
+    }
+    &__fav{
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    &__price-wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding-top: $contentpadding;
+        padding-bottom: $contentpadding;
+        align-items: center;
+    }
+    &__description{
+        margin-bottom: $contentpadding;
+    }
+    &__price{
+        font-size: 2em;
+        color: $secondary;
+    }
+    &__input-display{
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        padding: $contentpadding /2;
+        border: 1px solid;
+        font-family: 'Lato', sans-serif;
+    }
+    &__quantity-btn-pluss{
+        font-size: 2em;
+        margin-left: 10px;
+    }
+    &__quantity-btn-minus{
+        font-size: 2em;
+        margin-right: 10px;
+    }
+    &__quantity-btn-pluss:focus{
+        outline: none;
+        color: $primary;
+    }
+    &__quantity-btn-minus:focus{
+        outline: none;
+        color: $primary;
+    }
+    &__quantity{
+        display: flex;
+        align-items: center;
+    }
+    &__cart-btn{
+        background-color: $primary;
+        color: $white;
+        padding: $contentpadding /2;
+        width: 100%;
+        margin-top: $contentpadding;
+        margin-bottom: $contentpadding;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .details-page{
+        &__cart-btn{
+            width: 200px;
+        }
+        &__img{
+            height: 400px;
+        }
+    }
+}
+
+@media screen and (min-width: 700px){
+    .details-page{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        &__wrapper{
+            display: flex;
+        }
+        &__row-one{
+            width: 50%;
+        }
+        &__row-two{
+            width: 50%;
+        }
+        &__cart-btn{
+            width: 100%;
+        }
+        &__img{
+            margin: $contentpadding;
+            height: 500px;
+        }
+    }
+        
+}
+
+@media screen and (min-width: 1000px){
+    .details-page{
+        &__img{
+            height: 700px;
+        }
+        &__row-one{
+            width: 60%;
+        }
+        &__row-two{
+            width: 40%;
+        }
+    }
+}
+
+
+.fav-active{
+    color: $primary;
+}
+
+.fav-message-active{
+    display: block;
+}

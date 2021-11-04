@@ -1,0 +1,108 @@
+/* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main-content {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  font-family: "Lato", sans-serif;
+}
+
+// getting footer to stick to bottom -- start
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+  overflow-x: auto;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  font-family: "Lato", sans-serif;
+}
+
+// getting footer to stick to bottom -- end
+
+p {
+  margin: 0px;
+}
+
+button {
+  background-color: transparent;
+  padding: 0px;
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+}
+
+a,
+p {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  font-family: "Lato", sans-serif;
+}
+
+.main-products {
+  margin-bottom: 1.25rem;
+}

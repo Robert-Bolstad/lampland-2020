@@ -1,0 +1,25 @@
+//setup
+@import "base";
+@import "variables";
+
+//components
+
+@import "components/nav";
+@import "components/footer";
+@import "components/hero";
+@import "components/usp";
+@import "components/form";
+@import "components/messageContainer";
+@import "components/card";
+@import "components/filter";
+@import "components/button";
+@import "components/popup";
+@import "components/loader";
+
+//pagestyles
+@import "pagestyles/index";
+@import "pagestyles/details";
+@import "pagestyles/cartpage";
+@import "pagestyles/login";
+@import "pagestyles/registration";
+@import "pagestyles/favorites";

@@ -1,0 +1,30 @@
+.message-container {
+  font-family: "Lato", sans-serif;
+}
+
+.message {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid grey;
+  color: grey;
+  margin-bottom: 20px;
+}
+
+.message.error {
+  border-color: red;
+  color: white;
+  background: red;
+}
+
+.message.warning {
+  border-color: orange;
+  color: white;
+  background: orange;
+}
+
+.message.success {
+  border-color: green;
+  color: white;
+  background: green;
+}

@@ -1,0 +1,81 @@
+.hero {
+  padding-top: $contentpadding;
+  padding-bottom: $contentpadding;
+  background-size: cover;
+  background-position: 80%;
+
+  &__inner {
+    padding: $contentpadding;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__slogan {
+    font-size: 3em;
+    padding-bottom: $contentpadding;
+    font-weight: 800;
+    color: $white;
+    width: 200px;
+  }
+  &__link {
+    padding: $contentpadding - 0.35rem;
+    background-color: $primary;
+    display: block;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+  }
+  &__link:hover {
+    background-color: $primary-hover;
+  }
+
+  &__link:hover {
+    background-color: $primary-hover;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .hero {
+    background-position: 90%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .hero {
+    &__link {
+      margin-left: 0px;
+      margin-top: $contentpadding;
+    }
+    &__slogan {
+      width: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    &__inner {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    &__slogen-wrap {
+      margin-top: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hero {
+    &__inner {
+      margin-top: 120px;
+      margin-bottom: 120px;
+    }
+    &__slogen-wrap {
+      margin-top: 0px;
+    }
+  }
+}

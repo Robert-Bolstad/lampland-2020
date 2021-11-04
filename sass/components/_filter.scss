@@ -1,0 +1,187 @@
+.productpage-wrapper{
+    padding: 1.25em;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter{
+    padding-left: $contentpadding;
+    padding-right: $contentpadding;
+    padding-bottom: $contentpadding /2;
+    text-align: right;  
+    &__input{
+        padding: $contentpadding /2;
+        width: 100%;
+        display: none;
+    }
+    &__filter-icon{
+        display: none;
+        margin-left: $contentpadding;
+        outline: none;
+    }
+    &__filter-icon:hover .fa-filter{
+        color: $primary;
+    }
+    &__filter-icon:focus .fa-filter{
+        color: $primary;
+    }
+
+}
+
+.price-filter{
+    &__input{
+        padding: $contentpadding/3;
+        width: 130px;
+    }
+}
+
+.checkbox-filter{
+    display: hidden;
+}
+
+
+
+.filter-checkbox-btn{
+    border: 1px solid $black;
+    display: flex;
+    border-radius: 2px;
+    margin-right: 5px;
+    background-color: $white;
+}
+
+.filter-checkbox-icon{
+    font-size: 0.4em;
+    color: $white;
+    padding: 5px;
+}
+
+
+.filter-wrapper-inner{
+    padding: $contentpadding;
+    padding-bottom: $contentpadding;
+    padding-top: 0px;
+    margin-top: $contentpadding/2;
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+    align-items: center;
+}
+
+
+
+.checkbox-wrapper{
+    padding-top: $contentpadding;
+    width: 50%;
+    display: flex;
+    &__item-name{
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+.checkbox-wrapper input{
+    margin: 0px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.price-filter{
+    padding-top: $contentpadding;
+}
+
+.filter-wrapper-two{
+    background-color: $gray;
+    margin-left: $contentpadding;
+    margin-right: $contentpadding;
+}
+
+.filter-icon-btn{
+    display: none;
+    outline: none;
+}
+
+.filter-icon-btn:focus   .filter-icon{
+    color: $primary;
+}
+
+.filter__search-icon{
+    outline: none;
+}
+
+.filter__search-icon:focus .fa-search{
+    outline: none;
+    color: $primary;
+}
+
+
+@media screen and (min-width: 600px){
+    .filter{
+        padding: 0px;
+        &__input{
+            width: 300px;
+            display: block;
+        } 
+        &__search-icon{
+            display: none;
+        }
+    }
+    
+    .filter-icon-btn{
+        display: block;
+        margin-left: $contentpadding;
+    }
+    .filter-icon{
+        margin-right: 5px;
+    }
+    .checkbox-wrapper{
+        width: 25%;
+    }
+
+    .productpage-wrapper{
+        display: block;
+        padding: 0px;
+    }
+    
+    .filter-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $contentpadding;
+        padding-bottom: 0px;
+    }
+    .filter-wrapper-inner{
+        margin-top: $contentpadding;
+    }
+
+}
+
+.filter-open{
+    display: block;
+}
+
+.more-filters-open{
+    display: flex;
+}
+
+.more-filters-open-desktop{
+    display: flex;
+}
+
+@media screen and (min-width: 900px){
+    .checkbox-wrapper{
+        width: auto;
+    }
+    .filter-wrapper-inner{
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (max-width: 380px){
+    .checkbox-wrapper{
+        &__item-name{
+            font-size: smaller;
+        }
+    }
+}

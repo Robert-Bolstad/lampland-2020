@@ -1,0 +1,60 @@
+.card{
+    padding: $contentpadding;
+
+    &__info-top{
+        justify-content: space-between;
+        display: flex;
+    }
+    &__description{
+        overflow: hidden;
+    }
+    &__img{
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: $gray;
+    }
+    &__link{
+        color: $primary;
+    }
+    &__link:hover{
+        color: $primary-hover;
+    }
+    &__price{
+        color: $secondary;
+    }
+    &__admin-section{
+        padding-top: $contentpadding;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__delete{
+        color: $red;
+        font-size: 1em;
+    }
+    &__edit{
+        color: $red;
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .card{
+        width: 50%;
+        padding: $contentpadding /2;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        padding: $contentpadding /2;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    .card{
+        width: 25%;
+    }
+
+}
